@@ -1,0 +1,67 @@
+#infobar {
+    padding-block: 8px;
+
+    ul a {
+        color: $sec-color;
+    }
+
+    .brand-icon {
+        font-size: 14px;
+    }
+
+    .pages,
+    .info-btn {
+        font: 500 13px $sec-font;
+    }
+
+    .info-btn {
+        font-weight: 400;
+    }
+    i{
+        font-size: 10px;
+        margin-left: 2px;
+    }
+    img{
+        width: 22px;
+        height: auto;
+    }
+}
+#navbar{
+    color: $sec-color;
+    padding-block:20px;
+    img{
+        width: 170px;
+        height: 40px;
+    }
+    .nav-links{
+        color: $sec-color;
+        font: 500 18px $sec-font;
+    }
+    .product-cart-links{
+        color: $sec-color;
+        font-size: 22px;
+        position: relative;
+        .cart-count {
+            position: absolute;
+            top: -9px;
+            right: -34%;
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+            text-align: center;
+            font-size: 8px;
+            border-radius: 50%;
+            color:$color;
+            background: $sec-color;
+        }
+    }
+}
+#search-box{
+    background: #f0f0f0;
+    input{
+        background: #f0f0f0;
+        &:focus-visible{
+            outline: none;
+        }
+    }
+}

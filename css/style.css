@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1320px;
+}
+
+.border {
+  border: 1px solid #000;
+}
+
+#infobar {
+  padding-block: 8px;
+}
+#infobar ul a {
+  color: #000000;
+}
+#infobar .brand-icon {
+  font-size: 14px;
+}
+#infobar .pages,
+#infobar .info-btn {
+  font: 500 13px Plus Jakarta Sans;
+}
+#infobar .info-btn {
+  font-weight: 400;
+}
+#infobar i {
+  font-size: 10px;
+  margin-left: 2px;
+}
+#infobar img {
+  width: 22px;
+  height: auto;
+}
+
+#navbar {
+  color: #000000;
+  padding-block: 20px;
+}
+#navbar img {
+  width: 170px;
+  height: 40px;
+}
+#navbar .nav-links {
+  color: #000000;
+  font: 500 18px Plus Jakarta Sans;
+}
+#navbar .product-cart-links {
+  color: #000000;
+  font-size: 22px;
+  position: relative;
+}
+#navbar .product-cart-links .cart-count {
+  position: absolute;
+  top: -9px;
+  right: -34%;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 8px;
+  border-radius: 50%;
+  color: #fff;
+  background: #000000;
+}
+
+#search-box {
+  background: #f0f0f0;
+}
+#search-box input {
+  background: #f0f0f0;
+}
+#search-box input:focus-visible {
+  outline: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+$main-color:#c9ff5b;
+$sec-color:#000000;
+$bg-color:#eb3f18;
+$color:#fff;
+$main-font:Oswald;
+$sec-font:Plus Jakarta Sans;
+
+.container{
+    max-width: 1320px;
+}
+.border{
+    border: 1px solid #000;
+}
+@import 'header';
