@@ -27,4 +27,249 @@ $sec-font:Plus Jakarta Sans;
 .border{
     border: 1px solid #000;
 }
+@mixin anchor-btn{
+    background: $color;
+    border: 1px solid $color;
+    color:$sec-color;
+    padding:10px 30px ;
+    font:500 13px $sec-font;
+    transition: all .5s;
+}
+.shop-btn{
+    background: $color;
+    color:$sec-color;
+    padding:10px 30px ;
+    font:500 13px $sec-font;
+    transition: all .5s;
+
+}
+.shop-btn:hover{
+    color: $color;
+    background: $sec-color;
+}
 @import 'header';
+#sales-offer{
+    background: $main-color;
+    padding-block: 8px;
+    .offer{
+        margin-left: 5px;
+        font: 400 13px $sec-font;
+    }
+    .fa-solid{
+        font-size: 15px;
+    }
+}
+// banner style
+#banner{
+    background: $sec-color;
+    overflow: hidden;
+    height: 600px;
+    .bg-img{
+        animation:banner-ani 3s linear  infinite alternate-reverse;
+    }
+    .slider-img{
+        width: 500px;
+        height: auto;
+        position: absolute;
+    }
+    .rotate{
+        transform: rotateZ(10deg);
+    }
+    .banner-head{
+        width: 50%;
+        position: absolute;
+        z-index: 2;
+        inset: 0;
+        margin: 10% auto;
+        color: $color;
+        h1{
+            font: 600 80px/80px $main-font;
+        }
+        span{
+            font:400 14px $sec-font;
+        }
+        .banner-links{
+            @include anchor-btn;
+            &:hover{
+                background: rgba(0,0,0,0.0);
+                color: $color;
+            }
+        }
+    }
+}
+@keyframes banner-ani {
+    0%{ transform:translateY(0)  rotateZ(10deg); 
+    }
+    100%{transform:translateY(-90px) rotateZ(10deg) ;}
+}
+// banner style
+// inner body style
+#discount-bar{
+    border: 1px solid #000;
+    h2{
+        width: 80%;
+        font:600 30px/30px $main-font; 
+    }
+}
+@mixin bg-properties{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+#products-banners{
+    .banner-1{
+        padding: 120px 50px;
+        background: url(../images/sport-2-banner-1.jpg);
+        @include bg-properties;
+    }
+    .banner-2{
+        padding: 30px 50px;
+        width: 49.3%;
+        background: url(../images/sport-2-banner-2.jpg);
+        @include bg-properties;
+    }
+    .banner-3{
+        padding: 30px 50px;
+        width: 49.3%;
+        background: url(../images/sport-2-banner-3.jpg);
+        @include bg-properties;
+    }
+    .heading-box{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        h2{
+            width: 40%;
+            color: $color;
+            font:600 70px/70px $main-font;
+            .green{
+                color: $main-color
+            } 
+        }
+        .tagline{
+            font:400 20px $sec-font ;
+            color:$color;
+        }
+        .h2{
+            font-size: 60px;
+        }
+        .shop-links{
+            @include anchor-btn;
+            &:hover{
+                background: transparent;
+                color: $color;
+            }
+        }
+    }
+}
+// product - grid
+#product-grid{
+    .grid-heading{
+        h2{
+            letter-spacing: 1px;
+            font:600 40px $main-font ;
+        }
+        .timeout{
+            background: $bg-color;
+            color: $color;
+            .time{
+                letter-spacing: 1px;
+                font:700 16px $sec-font ;
+            }
+        }
+    }
+    .products{
+        .product-img{
+            position: relative;
+            overflow: hidden;
+            .discount{
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                font: 400 12px $sec-font;
+                padding:2px 10px ;
+                color: $color;
+                background: $bg-color;
+            }
+            .product-attributes{
+                position: absolute;
+                top: 10px;
+                right: -32px;
+                transition: all .2s;
+                a{
+                    font-size: 12px;
+                    padding: 8px;
+                    color: $sec-color;
+                    background: $color;
+                    margin-bottom: 5px;
+                }
+            }
+            .product-sizes{
+                position: absolute;
+                left: 10px;
+                right: 10px;
+                bottom: -100%;
+                background: $color;
+                padding: 5px 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all .5s;
+                h5,a{
+                    font: 400 12px $sec-font;
+                }
+                a{
+                    padding:2px 5px;
+                    color: $sec-color;
+                    border: 0.5px solid $sec-color;
+                    transition: all .5s;
+                    &:hover{
+                        color: $color;
+                        background: $sec-color;
+                    }
+                }
+            }
+            .add-cart{
+                position: absolute;
+                left: 10px;
+                right: 10px;
+                bottom: -35px;
+                padding: 5px 10px;
+                color: $color;
+                background: $sec-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .2s;
+            }
+        }
+        .product-details{
+            .product-name{
+                color: $sec-color;
+                font:400 14px $sec-font ;
+            }
+            .price,.discount-price,.actual-price{
+                font:400 14px $sec-font;
+            }
+            .discount-price{
+                color: $bg-color;
+            }
+            .actual-price{
+                color: grey;
+            }
+        }
+        &:hover{
+            .product-attributes{
+                right: 10px;
+            }
+            .product-sizes{
+                bottom: 10px;
+            }
+            .add-cart{
+                bottom: 10px;
+            }
+        }
+    }
+}
