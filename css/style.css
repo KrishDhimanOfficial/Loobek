@@ -6,6 +6,11 @@
 
 a {
   text-decoration: none;
+  display: inline-block;
+}
+
+span {
+  display: inline-block;
 }
 
 img {
@@ -26,6 +31,10 @@ ul {
   border: 1px solid #000;
 }
 
+section {
+  margin-block: 80px;
+}
+
 .shop-btn {
   background: #fff;
   color: #000000;
@@ -34,9 +43,25 @@ ul {
   transition: all 0.5s;
 }
 
+.shop-btn-2 {
+  border: 1px solid #000;
+  background: #000000;
+  color: #fff;
+  padding: 10px 30px;
+  margin-block: 10px;
+  font: 500 13px Plus Jakarta Sans;
+  transition: all 0.5s;
+}
+
 .shop-btn:hover {
   color: #fff;
   background: #000000;
+}
+
+.shop-btn-2:hover {
+  border: 1px solid #000;
+  color: #000000;
+  background: #fff;
 }
 
 #infobar {
@@ -66,6 +91,7 @@ ul {
 
 #navbar {
   color: #000000;
+  background: #fff;
   padding-block: 20px;
 }
 #navbar img {
@@ -215,6 +241,10 @@ ul {
   background: transparent;
   color: #fff;
 }
+#products-banners .banner .heading-box .shop-links, #products-banners .banner .heading-box .shop-btn {
+  padding: 10px 40px;
+  font-size: 16px;
+}
 #products-banners .banner img {
   transition: all 0.4s;
 }
@@ -350,4 +380,149 @@ ul {
 }
 #product-grid .more-products:hover {
   color: #eb3f18 !important;
+}
+
+#product-categories .categories-heading h2 {
+  letter-spacing: 1px;
+  font: 600 40px Oswald;
+}
+#product-categories .banner {
+  width: 32%;
+}
+#product-categories .banner .categore-img {
+  overflow: hidden;
+}
+#product-categories .banner .categore-img img {
+  transition: all 0.5s;
+}
+#product-categories .banner .categore-img:hover img {
+  transform: scale(1.1) rotateZ(5deg);
+}
+#product-categories .banner .categories-desc h3 {
+  letter-spacing: 1px;
+  font: 600 30px Oswald;
+}
+
+#product-grid-banner {
+  background-color: #c9ff5b;
+  background-image: url(../images/sport-2-slide3.png);
+  background-size: cover;
+  padding-block: 80px;
+}
+#product-grid-banner h2 {
+  font: 600 75px/80px Oswald;
+}
+
+#posts h2 {
+  font: 600 40px/40px Oswald;
+}
+#posts .post {
+  margin-block: 30px;
+}
+#posts .post .rating .fa-solid {
+  color: #eb3f18;
+}
+#posts .post .post-content {
+  margin-block: 30px;
+  font: 600 25px/30px Oswald;
+}
+#posts .post .description img {
+  width: 30px;
+  height: 40px;
+}
+#posts .post .description span, #posts .post .description a {
+  color: #000000;
+  font: 500 13px Plus Jakarta Sans;
+}
+
+.post-slider {
+  height: 5px;
+  background: #e5e5e5;
+  position: relative;
+}
+.post-slider::before {
+  content: "";
+  background: #000000;
+  position: absolute;
+  inset: 0;
+  width: 50%;
+  border-radius: 10px;
+}
+
+#social-media {
+  background: #eb3f18;
+}
+#social-media .heading {
+  color: #fff;
+}
+#social-media .heading h2 {
+  font: 600 60px/60px Oswald;
+}
+#social-media .heading span {
+  font: 300 18px/24px Plus Jakarta Sans;
+}
+#social-media .heading .shop-links {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #000000;
+  padding: 10px 30px;
+  font: 500 13px Plus Jakarta Sans;
+  transition: all 0.5s !important;
+}
+#social-media .heading .shop-links i {
+  margin-right: 5px;
+}
+#social-media .heading .shop-links:hover {
+  background: transparent;
+  color: #fff;
+}
+
+#services .services i {
+  font-size: 40px;
+}
+#services .services h3 {
+  text-transform: uppercase;
+  font: 600 22px/24px Oswald;
+}
+#services .services span {
+  font: 400 14px/24px Plus Jakarta Sans;
+}
+
+#newsletter h2 {
+  font: 600 30px/24px Oswald;
+}
+#newsletter input {
+  border: 1px solid #000;
+  padding: 7px 20px;
+}
+#newsletter input[type=submit] {
+  border: 0;
+  font: 500 16px Plus Jakarta Sans;
+  color: #fff;
+  background: #000000;
+  padding: 10px 40px;
+}
+#newsletter input:focus-visible {
+  outline: none;
+}
+
+footer {
+  padding-block: 60px;
+}
+
+#footer {
+  max-height: 220px;
+  border: 1px solid #000;
+}
+#footer h5 {
+  margin-bottom: 20px;
+  font: 500 16px Plus Jakarta Sans;
+}
+#footer a {
+  font: 400 14px Plus Jakarta Sans;
+  color: #000000;
+  transition: all 0.2s;
+}
+#footer a:hover {
+  color: #eb3f18;
 }/*# sourceMappingURL=style.css.map */

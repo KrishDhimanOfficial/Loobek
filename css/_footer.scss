@@ -1,0 +1,20 @@
+footer{
+    padding-block: 60px;
+}
+#footer{
+    max-height: 220px;
+    border: 1px solid #000;
+    h5{
+        margin-bottom: 20px;
+        font: 500 16px $sec-font;
+    }
+    a{
+        font: 400 14px $sec-font;
+        color: $sec-color;
+        transition: all .2s;
+        &:hover{
+            color:$bg-color;
+        }
+    }
+
+}
