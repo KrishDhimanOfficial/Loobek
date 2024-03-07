@@ -21,6 +21,9 @@ ul {
     padding: 0;
     margin: 0;
 }
+body{
+    font-family: sans-serif;
+}
 
 $main-color: #c9ff5b;
 $sec-color: #000000;
@@ -33,7 +36,7 @@ $sec-font: Plus Jakarta Sans;
     max-width: 1320px;
 }
 
-.border {
+.border-bd {
     border: 1px solid #000;
 }
 section{
@@ -152,11 +155,28 @@ section{
 // banner style
 // inner body style
 #discount-bar {
-    border: 1px solid #000;
-
     h2 {
         width: 80%;
         font: 600 30px/30px $main-font;
+    }
+    span{
+        font: 500 14px/18px $sec-font;
+    }
+    .coupon{
+        padding: 10px 15px;
+        border: 1px dashed #000;
+        transition: all .3s;
+        span{
+            font: 500 14px/18px $sec-font;
+        }
+        &:hover{
+            border: 1.5px dashed #000;
+        }
+    }
+    .discount-number{
+        color: $bg-color;
+        font:600 60px $main-font;
+        
     }
 }
 
@@ -522,3 +542,27 @@ section{
         }
     }
 }@import 'footer';
+// media queries
+@media (max-width: 1200px) {  }
+@media (max-width: 992px) { 
+    #navbar img {
+        width: 100%;
+        height:auto;
+      }
+ }
+ @media (max-width: 768px) { 
+    #navbar img {
+        width: 100px;
+        height:auto;
+      }
+}
+@media (max-width: 576px) {  }
+
+
+
+
+
+
+
+
+

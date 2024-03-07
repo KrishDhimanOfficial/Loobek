@@ -1,9 +1,11 @@
 footer{
-    padding-block: 60px;
+    padding-top: 60px;
+
 }
-#footer{
-    max-height: 220px;
-    border: 1px solid #000;
+address{
+    font: 400 14px/25px $sec-font;
+}
+#footer-sidebar{
     h5{
         margin-bottom: 20px;
         font: 500 16px $sec-font;
@@ -16,5 +18,25 @@ footer{
             color:$bg-color;
         }
     }
+    i{
+        margin-right: 8px;
+        font-size: 16px;
+    }
 
+}
+#phone-no{
+    font: 600 22px $main-font;
+}
+#company-email{
+    color: $sec-color;
+    font: 400 14px $sec-font;
+}
+#footer{
+    span,a{
+        color: $sec-color;
+        font: 400 14px $sec-font;
+    }
+    a:hover{
+        color: $bg-color;
+    }
 }

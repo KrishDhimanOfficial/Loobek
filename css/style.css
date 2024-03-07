@@ -23,11 +23,15 @@ ul {
   margin: 0;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 .container {
   max-width: 1320px;
 }
 
-.border {
+.border-bd {
   border: 1px solid #000;
 }
 
@@ -194,12 +198,27 @@ section {
     transform: translateY(-90px) rotateZ(10deg);
   }
 }
-#discount-bar {
-  border: 1px solid #000;
-}
 #discount-bar h2 {
   width: 80%;
   font: 600 30px/30px Oswald;
+}
+#discount-bar span {
+  font: 500 14px/18px Plus Jakarta Sans;
+}
+#discount-bar .coupon {
+  padding: 10px 15px;
+  border: 1px dashed #000;
+  transition: all 0.3s;
+}
+#discount-bar .coupon span {
+  font: 500 14px/18px Plus Jakarta Sans;
+}
+#discount-bar .coupon:hover {
+  border: 1.5px dashed #000;
+}
+#discount-bar .discount-number {
+  color: #eb3f18;
+  font: 600 60px Oswald;
 }
 
 #products-banners .banner {
@@ -507,22 +526,56 @@ section {
 }
 
 footer {
-  padding-block: 60px;
+  padding-top: 60px;
 }
 
-#footer {
-  max-height: 220px;
-  border: 1px solid #000;
+address {
+  font: 400 14px/25px Plus Jakarta Sans;
 }
-#footer h5 {
+
+#footer-sidebar h5 {
   margin-bottom: 20px;
   font: 500 16px Plus Jakarta Sans;
 }
-#footer a {
+#footer-sidebar a {
   font: 400 14px Plus Jakarta Sans;
   color: #000000;
   transition: all 0.2s;
 }
+#footer-sidebar a:hover {
+  color: #eb3f18;
+}
+#footer-sidebar i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+#phone-no {
+  font: 600 22px Oswald;
+}
+
+#company-email {
+  color: #000000;
+  font: 400 14px Plus Jakarta Sans;
+}
+
+#footer span, #footer a {
+  color: #000000;
+  font: 400 14px Plus Jakarta Sans;
+}
 #footer a:hover {
   color: #eb3f18;
+}
+
+@media (max-width: 992px) {
+  #navbar img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  #navbar img {
+    width: 100px;
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
